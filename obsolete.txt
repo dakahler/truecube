@@ -1,0 +1,107 @@
+
+// Scaling (LL)
+void scale(double factor)
+{
+	int count2;
+
+	for (poly *trav=oneobj.polystart->next;trav!=NULL;) {
+		for (count2=0;count2<3;count2++) {
+			trav->vertices[count2].x*=factor;
+			trav->vertices[count2].y*=factor;
+			trav->vertices[count2].z*=factor;
+		}
+		trav=trav->next;
+	}
+}
+
+// Translate X
+void trl_x(int dir)
+{
+	world_x+=dir;
+}
+
+// Translate Y
+void trl_y(int dir)
+{
+	world_y+=dir;
+}
+
+// Translate Z
+void trl_z(int dir)
+{
+	world_z+=dir;
+}
+
+// Rotate parallel to X (LL)
+void rot_x(int dir)
+{
+	int count2;
+
+	for (poly *trav=oneobj.polystart->next;trav!=NULL;) {
+		for (count2=0;count2<3;count2++) {
+			trav->vertices[count2].y_temp=(trav->vertices[count2].y*(dcos(dir)))-(trav->vertices[count2].z*(dsin(dir)));
+			trav->vertices[count2].z=(trav->vertices[count2].y*(dsin(dir)))+(trav->vertices[count2].z*(dcos(dir)));
+			trav->vertices[count2].y=trav->vertices[count2].y_temp;
+		}
+		trav=trav->next;
+	}
+}
+
+// Rotate parallel to Y (LL)
+void rot_y(int dir)
+{
+	int count2;
+
+	for (poly *trav=oneobj.polystart->next;trav!=NULL;) {
+		for (count2=0;count2<3;count2++) {
+			trav->vertices[count2].x_temp=(trav->vertices[count2].x*(dcos(dir)))+(trav->vertices[count2].z*(dsin(dir)));
+			trav->vertices[count2].z=(-trav->vertices[count2].x*(dsin(dir)))+(trav->vertices[count2].z*(dcos(dir)));
+			trav->vertices[count2].x=trav->vertices[count2].x_temp;   //copy data from temp to real
+		}
+		trav=trav->next;
+	}
+}
+
+// Rotate parallel to Z (LL)
+void rot_z(int dir)
+{
+	int count2;
+
+	for (poly *trav=oneobj.polystart->next;trav!=NULL;) {
+		for (count2=0;count2<3;count2++) {
+			trav->vertices[count2].x_temp=(trav->vertices[count2].x*(dcos(dir)))-(trav->vertices[count2].y*(dsin(dir)));
+			trav->vertices[count2].y=(trav->vertices[count2].x*(dsin(dir)))+(trav->vertices[count2].y*(dcos(dir)));
+			trav->vertices[count2].x=trav->vertices[count2].x_temp;
+		}
+		trav=trav->next;
+	}	
+}
+
+if (keypress==',')
+		rot_y(1);
+	if (keypress=='.')
+		rot_y(-1);
+	if (keypress=='o')
+		rot_x(1);
+	if (keypress=='l')
+		rot_x(-1);
+	if (keypress=='[')
+		rot_z(1);
+	if (keypress==']')
+		rot_z(-1);
+	if (keypress=='a')
+		trl_x(-1);
+	if (keypress=='d')
+		trl_x(1);
+	if (keypress=='w')
+		trl_y(1);
+	if (keypress=='s')
+		trl_y(-1);
+	if (keypress=='r')
+		trl_z(1);
+	if (keypress=='f')
+		trl_z(-1);
+	if (keypress=='z')
+		scale(.9);
+	if (keypress=='x')
+		scale(1.1);

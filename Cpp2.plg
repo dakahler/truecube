@@ -1,0 +1,114 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Cpp2 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSP8323.TMP" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/Cpp2.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\C++\truecube\Cpp2.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP8323.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP8324.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Cpp2.pdb" /debug /machine:I386 /out:"Debug/Cpp2.exe" /pdbtype:sept 
+".\Debug\Cpp2.obj"
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP8324.TMP"
+<h3>Output Window</h3>
+Compiling...
+Cpp2.cpp
+c:\c++\truecube\cpp2.cpp(25) : error C2065: 'polys' : undeclared identifier
+c:\c++\truecube\cpp2.cpp(25) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(25) : error C2228: left of '.stop' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(33) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(33) : error C2228: left of '.num_verts' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(34) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(34) : error C2228: left of '.num_verts' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(35) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(35) : error C2228: left of '.num_verts' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(36) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(36) : error C2228: left of '.vertices' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(36) : error C2228: left of '.x' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(37) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(37) : error C2228: left of '.vertices' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(37) : error C2228: left of '.y' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(38) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(38) : error C2228: left of '.vertices' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(38) : error C2228: left of '.z' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(39) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(39) : error C2228: left of '.vertices' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(39) : error C2228: left of '.x' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(40) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(40) : error C2228: left of '.vertices' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(40) : error C2228: left of '.y' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(41) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(41) : error C2228: left of '.vertices' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(41) : error C2228: left of '.z' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(42) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(42) : error C2228: left of '.vertices' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(42) : error C2228: left of '.x' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(43) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(43) : error C2228: left of '.vertices' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(43) : error C2228: left of '.y' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(44) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(44) : error C2228: left of '.vertices' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(44) : error C2228: left of '.z' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(46) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(46) : error C2228: left of '.num_verts' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(47) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(47) : error C2228: left of '.num_verts' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(48) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(48) : error C2228: left of '.vertices' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(48) : error C2228: left of '.x' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(49) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(49) : error C2228: left of '.vertices' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(49) : error C2228: left of '.y' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(50) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(50) : error C2228: left of '.vertices' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(50) : error C2228: left of '.z' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(51) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(51) : error C2228: left of '.vertices' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(51) : error C2228: left of '.x' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(52) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(52) : error C2228: left of '.vertices' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(52) : error C2228: left of '.y' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(53) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(53) : error C2228: left of '.vertices' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(53) : error C2228: left of '.z' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(54) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(54) : error C2228: left of '.vertices' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(54) : error C2228: left of '.x' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(55) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(55) : error C2228: left of '.vertices' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(55) : error C2228: left of '.y' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(56) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(56) : error C2228: left of '.vertices' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(56) : error C2228: left of '.z' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(57) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(57) : error C2228: left of '.vertices' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(57) : error C2228: left of '.x' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(58) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(58) : error C2228: left of '.vertices' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(58) : error C2228: left of '.y' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(59) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(59) : error C2228: left of '.vertices' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(59) : error C2228: left of '.z' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(61) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(61) : error C2228: left of '.color_r' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(62) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(62) : error C2228: left of '.color_g' must have class/struct/union type
+c:\c++\truecube\cpp2.cpp(63) : error C2109: subscript requires array or pointer type
+c:\c++\truecube\cpp2.cpp(63) : error C2228: left of '.color_b' must have class/struct/union type
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+Cpp2.exe - 82 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
